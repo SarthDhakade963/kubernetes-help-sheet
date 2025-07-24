@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: example-cronjob
+  namespace: nginx
+spec:
+  schedule: "*/5 * * * *" # Every 5 minute
+  jobTemplate:
+   spec:
+    template:
+     spec:
+      containers:
+       - name: hello
+         image: busybox
+         command:
+         - sh
+         - -c
+         - >
+           echo "CronJob started!"
+           echo "Hello from K8s CronJob!"
+           echo "CronJob Completed!"
+      restartPolicy: OnFailure
+

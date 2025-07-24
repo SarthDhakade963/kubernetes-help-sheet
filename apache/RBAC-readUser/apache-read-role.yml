@@ -1,0 +1,10 @@
+# Grants read permission within apache namespace
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: apache-read-role
+  namespace: apache
+rules:
+- apiGroups: ["", "apps", "rbac.authorization.k8s.io", "batch"]
+  resources: ["pods", "services", "deployments", "rolebindings", "role", "jobs"]
+  verbs: ["get", "watch", "list"]

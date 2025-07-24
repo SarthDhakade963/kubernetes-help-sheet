@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: stage-nginx-pod
+  namespace: stage-environment
+spec:
+  containers:
+    - name: stage-nginx-container
+      image: nginx:latest
+
