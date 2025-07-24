@@ -1,0 +1,13 @@
+apiVersion: instagram.instagram.com/v1
+kind: User
+metadata:
+  labels:
+    name: sarthak
+  name: user-sample
+spec:
+  # TODO(user): Add fields here
+  name: sarthak_dev
+  followers: 120
+  age: 22
+  bio: "You only Live Once"
+  posts: 10

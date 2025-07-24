@@ -1,0 +1,10 @@
+apiVersion: udemy.com/v1
+kind: DevopsBatch
+metadata:
+  name: july-devops-batch
+  namespace: batches-of-devops
+spec:
+  name: "DevOps July 2025"
+  duration: "45 days"
+  mode: "Online"
+  platform: "Zoom"

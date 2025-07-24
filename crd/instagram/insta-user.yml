@@ -1,0 +1,11 @@
+apiVersion: instagram.com/v1
+kind: User
+metadata:
+  name: insta-user1
+  namespace: insta-users
+spec:
+  name: "Sarthak Dhakade"
+  age: 22
+  bio: "You only Live once"
+  followers: 700
+  posts: 10 
